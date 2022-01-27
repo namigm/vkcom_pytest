@@ -3,6 +3,7 @@ from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.service import Service
 from vkcom_pytest.pageObjects.LoginPage import loginPage
+
 s = Service(ChromeDriverManager().install())
 
 
@@ -13,7 +14,7 @@ class Test_001_test_login:
     #     cls.driver = webdriver.Chrome(service=s)
     #     cls.driver.maximize_window()
 
-    def test_page_title(self):
+    def test_homepage_title(self):
         self.driver = webdriver.Chrome(service=s)
         self.driver.get('https://vk.com/')
         actual_title = self.driver.title
@@ -21,6 +22,7 @@ class Test_001_test_login:
         if actual_title == "Welcome! | VK":
             assert True
         else:
+            self.driver.get_screenshot_as_file(r"vkcom_pytest/screenshots/test_homepage_title.png")
             assert False
         self.driver.close()
         self.driver.quit()
