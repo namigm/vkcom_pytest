@@ -1,6 +1,6 @@
 import time
 from vkcom_pytest.locators.Locators_main import Locators
-from vkcom_pytest.testData.authdata import authdata
+from vkcom_pytest.utilities.readproperties import ReadConfig
 from selenium.webdriver.common.by import By
 
 
@@ -11,11 +11,11 @@ class loginPage:
     def setUsername(self):
         self.driver.implicitly_wait(10)
         self.driver.find_element(By.ID, Locators.indexEmail_id).clear()
-        self.driver.find_element(By.ID, Locators.indexEmail_id).send_keys(authdata.vk_login)
+        self.driver.find_element(By.ID, Locators.indexEmail_id).send_keys(ReadConfig.vk_login())
 
     def setPassword(self):
         self.driver.find_element(By.ID, Locators.indexPassword_id).clear()
-        self.driver.find_element(By.ID, Locators.indexPassword_id).send_keys(authdata.vk_password)
+        self.driver.find_element(By.ID, Locators.indexPassword_id).send_keys(ReadConfig.vk_password())
 
     def logInn(self):
         self.driver.find_element(By.ID, Locators.signinButton_id).click()

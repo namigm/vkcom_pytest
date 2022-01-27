@@ -2,9 +2,11 @@ import pytest
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.service import Service
-from vkcom_pytest.pageObjects.LoginPage import loginPage
 
 s = Service(ChromeDriverManager().install())
+
+from vkcom_pytest.pageObjects.LoginPage import loginPage
+from vkcom_pytest.utilities.readproperties import ReadConfig
 
 
 class Test_001_test_login:
@@ -16,7 +18,7 @@ class Test_001_test_login:
 
     def test_homepage_title(self):
         self.driver = webdriver.Chrome(service=s)
-        self.driver.get('https://vk.com/')
+        self.driver.get(ReadConfig.getURL())
         actual_title = self.driver.title
         print(actual_title)
         if actual_title == "Welcome! | VK":
@@ -29,7 +31,7 @@ class Test_001_test_login:
 
     def test_login(self):
         self.driver = webdriver.Chrome(service=s)
-        self.driver.get('https://vk.com/')
+        self.driver.get(ReadConfig.getURL())
         self.lp = loginPage(self.driver)
         self.driver.implicitly_wait(10)
         self.lp.setUsername()
