@@ -14,13 +14,13 @@ class loginPage:
         self.driver.find_element(By.ID, Locators.indexEmail_id).send_keys(authdata.vk_login)
 
     def setPassword(self):
-        self.driver.find_element_by_id(Locators.indexPassword_id).clear()
-        self.driver.find_element_by_id(Locators.indexPassword_id).send_keys(authdata.vk_password)
+        self.driver.find_element(By.ID, Locators.indexPassword_id).clear()
+        self.driver.find_element(By.ID, Locators.indexPassword_id).send_keys(authdata.vk_password)
 
     def logInn(self):
-        self.driver.find_element_by_id(Locators.signinButton_id).click()
+        self.driver.find_element(By.ID, Locators.signinButton_id).click()
 
     def topLogout(self):
-        self.driver.find_element_by_css_selector(Locators.topProfileMenu_css).click()
+        self.driver.find_element(By.CSS_SELECTOR, Locators.topProfileMenu_css).click()
         time.sleep(2)
-        self.driver.find_element_by_xpath(Locators.topLogoutButton_xpath).click()
+        self.driver.find_element(By.XPATH, Locators.topLogoutButton_xpath).click()
