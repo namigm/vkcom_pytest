@@ -4,9 +4,6 @@ config = ConfigParser()
 config.read(r'C:\Selenium\vkcom\vkcom_pytest\configurations\config.ini')
 
 
-
-
-
 class ReadConfig:
     @staticmethod
     def getURL():
