@@ -5,7 +5,7 @@ class LogGen:
     @staticmethod
     def loggen():
         logger.add(r"C:\Selenium\vkcom\vkcom_pytest\logs\logs.log", format="{time},{level},{message}", level="INFO",
-                   rotation="10 KB", compression="zip", serialize=True)
+                   rotation="10 KB", compression="zip")
         return logger
 
 # import logging
