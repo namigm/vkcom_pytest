@@ -1,29 +1,21 @@
 import pytest
-from selenium import webdriver
-from webdriver_manager.chrome import ChromeDriverManager
-from selenium.webdriver.chrome.service import Service
 from vkcom_pytest.pageObjects.LoginPage import loginPage
 from vkcom_pytest.utilities.readproperties import ReadConfig
 from vkcom_pytest.utilities.customLogger import LogGen
-s = Service(ChromeDriverManager().install())
-
-
 
 
 class Test_001_test_login:
     logger = LogGen.loggen()
-
-
 
     # @classmethod
     # def setUpClass(cls):
     #     cls.driver = webdriver.Chrome(service=s)
     #     cls.driver.maximize_window()
 
-    def test_homepage_title(self):
+    def test_homepage_title(self, setup):
         self.logger.info("****************** Test_001_test_login ******************")
         self.logger.info("****************** Verifying test_homepage_title ******************")
-        self.driver = webdriver.Chrome(service=s)
+        self.driver = setup
         self.driver.get(ReadConfig.getURL())
 
         actual_title = self.driver.title
@@ -39,11 +31,10 @@ class Test_001_test_login:
             self.driver.close()
             assert False
 
-
-    def test_login(self):
+    def test_login(self, setup):
         self.logger.info("****************** Test_001_test_login ******************")
         self.logger.info("****************** Verifying test_login ******************")
-        self.driver = webdriver.Chrome(service=s)
+        self.driver = setup
         self.driver.get(ReadConfig.getURL())
         self.lp = loginPage(self.driver)
         self.driver.implicitly_wait(10)
