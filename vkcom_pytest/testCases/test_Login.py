@@ -38,8 +38,8 @@ class Test_001_test_login:
         self.driver.get(ReadConfig.getURL())
         self.lp = loginPage(self.driver)
         self.driver.implicitly_wait(10)
-        self.lp.setUsername()
-        self.lp.setPassword()
+        self.lp.setUsername(ReadConfig.vk_login())
+        self.lp.setPassword(ReadConfig.vk_password())
         self.lp.logInn()
         self.lp.topLogout()
         actual_title = self.driver.title

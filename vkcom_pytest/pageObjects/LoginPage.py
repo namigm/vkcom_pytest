@@ -8,14 +8,14 @@ class loginPage:
     def __init__(self, driver):
         self.driver = driver
 
-    def setUsername(self):
+    def setUsername(self,username):
         self.driver.implicitly_wait(10)
         self.driver.find_element(By.ID, Locators.indexEmail_id).clear()
-        self.driver.find_element(By.ID, Locators.indexEmail_id).send_keys(ReadConfig.vk_login())
+        self.driver.find_element(By.ID, Locators.indexEmail_id).send_keys(username)
 
-    def setPassword(self):
+    def setPassword(self, password):
         self.driver.find_element(By.ID, Locators.indexPassword_id).clear()
-        self.driver.find_element(By.ID, Locators.indexPassword_id).send_keys(ReadConfig.vk_password())
+        self.driver.find_element(By.ID, Locators.indexPassword_id).send_keys(password)
 
     def logInn(self):
         self.driver.find_element(By.ID, Locators.signinButton_id).click()
