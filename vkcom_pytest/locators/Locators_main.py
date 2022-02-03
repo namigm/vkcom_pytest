@@ -4,5 +4,6 @@ class Locators:
     signinButton_id = 'index_login_button'
     topProfileMenu_css = '.TopNavBtn__profileArrow > svg'
     topLogoutButton_xpath = '//*[@id="top_logout_link"]/span'
-
+    topHomeLink_small_css = '.TopHomeLink path:nth-child(2)'
+    topHomeLink_big_css = '.TopHomeLink > svg'
 

@@ -24,3 +24,13 @@ class loginPage:
         self.driver.find_element(By.CSS_SELECTOR, Locators.topProfileMenu_css).click()
         time.sleep(2)
         self.driver.find_element(By.XPATH, Locators.topLogoutButton_xpath).click()
+
+    def topHomeLinkSmall(self):
+        self.driver.find_element(By.CSS_SELECTOR, Locators.topHomeLink_small_css).click()
+        time.sleep(2)
+
+    def topHomeLinkBig(self):
+        self.driver.find_element(By.CSS_SELECTOR, Locators.topHomeLink_big_css).click()
+        time.sleep(2)
+
+

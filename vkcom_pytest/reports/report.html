@@ -243,7 +243,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
 }
 </script>
     <h1>report.html</h1>
-    <p>Report generated on 02-Feb-2022 at 23:29:37 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.1.1</p>
+    <p>Report generated on 03-Feb-2022 at 15:21:38 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.1.1</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
@@ -262,8 +262,8 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <td>Tester</td>
         <td>NamigM</td></tr></table>
     <h2>Summary</h2>
-    <p>2 tests ran in 24.18 seconds. </p>
-    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">1 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">1 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
+    <p>1 tests ran in 66.03 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">1 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
       <thead id="results-table-head">
@@ -274,28 +274,20 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
           <th class="sortable links" col="links">Links</th></tr>
         <tr hidden="true" id="not-found-message">
           <th colspan="4">No results found. Try to check the filters</th></tr></thead>
-      <tbody class="failed results-table-row">
-        <tr>
-          <td class="col-result">Failed</td>
-          <td class="col-name">vkcom_pytest/testCases/test_Login.py::Test_001_test_login::test_homepage_title</td>
-          <td class="col-duration">7.73</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log">self = &lt;testCases.test_Login.Test_001_test_login object at 0x000001BDC3D3C0D0&gt;<br/>setup = &lt;selenium.webdriver.chrome.webdriver.WebDriver (session=&quot;16d9bdb102cbd22cdef7f9de9afa5495&quot;)&gt;<br/><br/>    def test_homepage_title(self, setup):<br/>        self.logger.info(&quot;****************** Test_001_test_login ******************&quot;)<br/>        self.logger.info(&quot;****************** Verifying test_homepage_title ******************&quot;)<br/>        self.driver = setup<br/>        self.driver.get(ReadConfig.getURL())<br/>    <br/>        actual_title = self.driver.title<br/>        print(actual_title)<br/>        if actual_title == &quot;Welcoome! | VK&quot;:<br/>            self.logger.info(&quot;****************** test_homepage_title is passed ******************&quot;)<br/>            self.driver.close()<br/>            assert True<br/>    <br/>        else:<br/>            self.driver.get_screenshot_as_file(r&quot;vkcom_pytest/screenshots/test_homepage_title.png&quot;)<br/>            self.logger.error(&quot;****************** test_homepage_title is failed ******************&quot;)<br/>            self.driver.close()<br/>&gt;           assert False<br/><span class="error">E           assert False</span><br/><br/>vkcom_pytest\testCases\test_Login.py:32: AssertionError<br/> ------------------------------Captured stdout call------------------------------ <br/>Welcome! | VK
-<br/> ------------------------------Captured stderr call------------------------------ <br/>2022-02-02 23:29:16.183 | INFO     | testCases.test_Login:test_homepage_title:16 - ****************** Test_001_test_login ******************
-2022-02-02 23:29:16.186 | INFO     | testCases.test_Login:test_homepage_title:17 - ****************** Verifying test_homepage_title ******************
-2022-02-02 23:29:20.988 | ERROR    | testCases.test_Login:test_homepage_title:30 - ****************** test_homepage_title is failed ******************
-<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
-          <td class="col-name">vkcom_pytest/testCases/test_Login.py::Test_001_test_login::test_login</td>
-          <td class="col-duration">15.86</td>
+          <td class="col-name">vkcom_pytest/testCases/test_Login_DDT.py::Test_002_test_login_DDT::test_login</td>
+          <td class="col-duration">65.11</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log"> ------------------------------Captured stderr call------------------------------ <br/>2022-02-02 23:29:22.783 | INFO     | testCases.test_Login:test_login:35 - ****************** Test_001_test_login ******************
-2022-02-02 23:29:22.784 | INFO     | testCases.test_Login:test_login:36 - ****************** Verifying test_login ******************
-2022-02-02 23:29:37.264 | INFO     | testCases.test_Login:test_login:47 - ****************** test_login is passed ******************
+            <div class="log"> ------------------------------Captured stderr call------------------------------ <br/>2022-02-03 15:20:35.115 | INFO     | testCases.test_Login_DDT:test_login:15 - ****************** Test_002_test_login_DDT ******************
+2022-02-03 15:20:35.117 | INFO     | testCases.test_Login_DDT:test_login:16 - ****************** Verifying test_login_DDT ******************
+2022-02-03 15:20:50.946 | INFO     | testCases.test_Login_DDT:test_login:58 - ****************** Passed_DDT_value +859934343434 ******************
+2022-02-03 15:21:03.660 | INFO     | testCases.test_Login_DDT:test_login:58 - ****************** Passed_DDT_value +878787834343 ******************
+2022-02-03 15:21:17.072 | INFO     | testCases.test_Login_DDT:test_login:38 - ****************** Passed_DDT_value +994555902673 ******************
+2022-02-03 15:21:35.895 | INFO     | testCases.test_Login_DDT:test_login:58 - ****************** Passed_DDT_value namidk@gmail.com ******************
+2022-02-03 15:21:38.216 | INFO     | testCases.test_Login_DDT:test_login:65 - ****************** Test_002_test_login_DDT is passed ******************
+2022-02-03 15:21:38.501 | INFO     | testCases.test_Login_DDT:test_login:74 - ****************** Test_002_test_login_DDT is completed ******************
 <br/></div></td></tr></tbody></table></body></html>
