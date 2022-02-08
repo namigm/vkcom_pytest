@@ -8,7 +8,7 @@ class loginPage:
     def __init__(self, driver):
         self.driver = driver
 
-    def setUsername(self,username):
+    def setUsername(self, username):
         self.driver.implicitly_wait(10)
         self.driver.find_element(By.ID, Locators.indexEmail_id).clear()
         self.driver.find_element(By.ID, Locators.indexEmail_id).send_keys(username)
@@ -32,5 +32,3 @@ class loginPage:
     def topHomeLinkBig(self):
         self.driver.find_element(By.CSS_SELECTOR, Locators.topHomeLink_big_css).click()
         time.sleep(2)
-
-

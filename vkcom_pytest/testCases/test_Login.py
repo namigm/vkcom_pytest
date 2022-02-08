@@ -4,13 +4,10 @@ from vkcom_pytest.utilities.readproperties import ReadConfig
 from vkcom_pytest.utilities.customLogger import LogGen
 
 
+
 class Test_001_test_login:
     logger = LogGen.loggen()
 
-    # @classmethod
-    # def setUpClass(cls):
-    #     cls.driver = webdriver.Chrome(service=s)
-    #     cls.driver.maximize_window()
 
     def test_homepage_title(self, setup):
         self.logger.info("****************** Test_001_test_login ******************")
