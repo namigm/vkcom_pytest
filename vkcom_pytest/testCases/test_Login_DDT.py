@@ -1,4 +1,3 @@
-import pytest
 from vkcom_pytest.pageObjects.LoginPage import loginPage
 from vkcom_pytest.utilities.readproperties import ReadConfig
 from vkcom_pytest.utilities.customLogger import LogGen

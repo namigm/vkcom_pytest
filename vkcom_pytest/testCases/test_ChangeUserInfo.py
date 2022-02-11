@@ -1,4 +1,3 @@
-import pytest
 from vkcom_pytest.pageObjects.LoginPage import loginPage
 from vkcom_pytest.pageObjects.ChangeUserInfo import changeUserInfo
 from vkcom_pytest.utilities.readproperties import ReadConfig

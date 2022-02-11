@@ -1,6 +1,5 @@
 import time
 from vkcom_pytest.locators.Locators_main import Locators
-from vkcom_pytest.utilities.readproperties import ReadConfig
 from selenium.webdriver.common.by import By
 
 

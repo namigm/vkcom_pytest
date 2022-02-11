@@ -1,13 +1,10 @@
-import pytest
 from vkcom_pytest.pageObjects.LoginPage import loginPage
 from vkcom_pytest.utilities.readproperties import ReadConfig
 from vkcom_pytest.utilities.customLogger import LogGen
 
 
-
 class Test_001_test_login:
     logger = LogGen.loggen()
-
 
     def test_homepage_title(self, setup):
         self.logger.info("****************** Test_001_test_login ******************")
@@ -49,8 +46,3 @@ class Test_001_test_login:
             self.driver.close()
             assert False
 
-    # @classmethod
-    # def tearDownClass(cls):
-    #     cls.driver.close()
-    #     cls.driver.quit()
-    # print('tests completed')
