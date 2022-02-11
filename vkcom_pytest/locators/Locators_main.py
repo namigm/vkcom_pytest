@@ -28,3 +28,16 @@ class Locators:
     langField_css = '#container8 .selector_input'
     addAzLang_xpath = "//li[@title='Azərbaycan dili Азербайджанский']"
     bSaveProfInfo = "//*[@id='pedit_general']/div[17]/button"
+
+    ##########################FindUser.py############################
+
+    leftMenuFriends_id = 'l_fr'
+    bFindFriends_id = 'invite_button'
+    topSearch_id = 'search_query'
+    searchFilterExpand_xpath = '//*[@id="search_filters_minimized"]/div[2]'
+    regionFilter_xpath = '//*[@id="container6"]/table/tbody/tr/td[1]/input[1]'
+    # setCountryFilter_xpath = f'//li[@title={country}]'
+    setOnlineNowFilter_xpath = '//div[@id="marital_filter"]/div[2]/div[2]'
+    finalUserCount_xpath = '//*[@id="friends_filters_header"]/div[3]/span'
+
+    # searchedUserResult_xpath = f'//*[@id="results"]/div[{r}]/div[3]/div[1]/a'

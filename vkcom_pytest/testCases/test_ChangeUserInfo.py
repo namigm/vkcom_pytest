@@ -35,5 +35,6 @@ class Test_003_change_user_info:
             self.logger.error("****************** Test_003_change_user_info is failed ******************")
             self.driver.get_screenshot_as_file(r"vkcom_pytest/screenshots/test_change_User_info.png")
             assert False
+        self.logger.info("****************** Test_003_change_user_info is completed ******************")
         self.driver.close()
         self.driver.quit()

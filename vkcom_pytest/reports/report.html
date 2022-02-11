@@ -243,7 +243,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
 }
 </script>
     <h1>report.html</h1>
-    <p>Report generated on 08-Feb-2022 at 19:33:32 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.1.1</p>
+    <p>Report generated on 12-Feb-2022 at 00:59:19 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.1.1</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
@@ -262,8 +262,8 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <td>Tester</td>
         <td>NamigM</td></tr></table>
     <h2>Summary</h2>
-    <p>2 tests ran in 28.18 seconds. </p>
-    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">1 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">1 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
+    <p>1 tests ran in 29.98 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">1 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
       <thead id="results-table-head">
@@ -274,28 +274,12 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
           <th class="sortable links" col="links">Links</th></tr>
         <tr hidden="true" id="not-found-message">
           <th colspan="4">No results found. Try to check the filters</th></tr></thead>
-      <tbody class="failed results-table-row">
-        <tr>
-          <td class="col-result">Failed</td>
-          <td class="col-name">vkcom_pytest/testCases/test_Login.py::Test_001_test_login::test_homepage_title</td>
-          <td class="col-duration">6.94</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log">self = &lt;testCases.test_Login.Test_001_test_login object at 0x000002A975D0F370&gt;<br/>setup = &lt;selenium.webdriver.chrome.webdriver.WebDriver (session=&quot;a9d4074392f8bdcb302dffc56af05811&quot;)&gt;<br/><br/>    def test_homepage_title(self, setup):<br/>        self.logger.info(&quot;****************** Test_001_test_login ******************&quot;)<br/>        self.logger.info(&quot;****************** Verifying test_homepage_title ******************&quot;)<br/>        self.driver = setup<br/>        self.driver.get(ReadConfig.getURL())<br/>    <br/>        actual_title = self.driver.title<br/>        print(actual_title)<br/>        if actual_title == &quot;Welcome! | VK&quot;:<br/>            self.logger.info(&quot;****************** test_homepage_title is passed ******************&quot;)<br/>            self.driver.close()<br/>&gt;           assert False<br/><span class="error">E           assert False</span><br/><br/>vkcom_pytest\testCases\test_Login.py:23: AssertionError<br/> ------------------------------Captured stdout call------------------------------ <br/>Welcome! | VK
-<br/> ------------------------------Captured stderr call------------------------------ <br/>2022-02-08 19:33:06.865 | INFO     | testCases.test_Login:test_homepage_title:13 - ****************** Test_001_test_login ******************
-2022-02-08 19:33:06.884 | INFO     | testCases.test_Login:test_homepage_title:14 - ****************** Verifying test_homepage_title ******************
-2022-02-08 19:33:11.482 | INFO     | testCases.test_Login:test_homepage_title:21 - ****************** test_homepage_title is passed ******************
-<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
-          <td class="col-name">vkcom_pytest/testCases/test_Login.py::Test_001_test_login::test_login</td>
-          <td class="col-duration">20.37</td>
+          <td class="col-name">vkcom_pytest/testCases/test_FindUser.py::Test_004_find_user::test_find_user</td>
+          <td class="col-duration">29.88</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log"> ------------------------------Captured stderr call------------------------------ <br/>2022-02-08 19:33:14.598 | INFO     | testCases.test_Login:test_login:32 - ****************** Test_001_test_login ******************
-2022-02-08 19:33:14.600 | INFO     | testCases.test_Login:test_login:33 - ****************** Verifying test_login ******************
-2022-02-08 19:33:32.551 | INFO     | testCases.test_Login:test_login:44 - ****************** test_login is passed ******************
-<br/></div></td></tr></tbody></table></body></html>
+            <div class="empty log">No log output captured.</div></td></tr></tbody></table></body></html>
