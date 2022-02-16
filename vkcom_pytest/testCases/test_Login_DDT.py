@@ -1,3 +1,4 @@
+import pytest
 from vkcom_pytest.pageObjects.LoginPage import loginPage
 from vkcom_pytest.utilities.readproperties import ReadConfig
 from vkcom_pytest.utilities.customLogger import LogGen
@@ -10,6 +11,7 @@ class Test_002_test_login_DDT:
     path = r"C:\Selenium\vkcom\vkcom_pytest\testData\loginData.xlsx"
     expected_title = "Новости"
 
+    @pytest.mark.regression
     def test_login(self, setup):
         self.logger.info("****************** Test_002_test_login_DDT ******************")
         self.logger.info("****************** Verifying test_login_DDT ******************")

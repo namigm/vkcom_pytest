@@ -1,3 +1,4 @@
+import pytest
 from vkcom_pytest.pageObjects.LoginPage import loginPage
 from vkcom_pytest.pageObjects.ChangeUserInfo import changeUserInfo
 from vkcom_pytest.utilities.readproperties import ReadConfig
@@ -9,6 +10,9 @@ from selenium.webdriver.common.by import By
 class Test_003_change_user_info:
     logger = LogGen.loggen()
 
+    @pytest.mark.sanity
+    @pytest.mark.regression
+    @pytest.mark.uat
     def test_change_user_info(self, setup):
         self.logger.info("****************** Test_003_change_user_info ******************")
         self.logger.info("****************** Verifying change_user_info ******************")

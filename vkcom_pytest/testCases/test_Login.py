@@ -1,3 +1,4 @@
+import pytest
 from vkcom_pytest.pageObjects.LoginPage import loginPage
 from vkcom_pytest.utilities.readproperties import ReadConfig
 from vkcom_pytest.utilities.customLogger import LogGen
@@ -6,6 +7,7 @@ from vkcom_pytest.utilities.customLogger import LogGen
 class Test_001_test_login:
     logger = LogGen.loggen()
 
+    @pytest.mark.regression
     def test_homepage_title(self, setup):
         self.logger.info("****************** Test_001_test_login ******************")
         self.logger.info("****************** Verifying test_homepage_title ******************")
@@ -25,6 +27,9 @@ class Test_001_test_login:
             self.driver.close()
             assert False
 
+    @pytest.mark.sanity
+    @pytest.mark.regression
+    @pytest.mark.uat
     def test_login(self, setup):
         self.logger.info("****************** Test_001_test_login ******************")
         self.logger.info("****************** Verifying test_login ******************")

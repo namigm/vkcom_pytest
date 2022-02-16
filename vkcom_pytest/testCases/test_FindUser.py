@@ -1,3 +1,4 @@
+import pytest
 from vkcom_pytest.pageObjects.LoginPage import loginPage
 from vkcom_pytest.utilities.readproperties import ReadConfig
 from vkcom_pytest.utilities.customLogger import LogGen
@@ -7,6 +8,9 @@ from vkcom_pytest.pageObjects.FindUser import findUser
 class Test_004_find_user:
     logger = LogGen.loggen()
 
+    @pytest.mark.regression
+    @pytest.mark.sanity
+    @pytest.mark.uat
     def test_find_user(self, setup):
         self.logger.info("****************** Test_004_find_user ******************")
         self.logger.info("****************** Verifying find_user function ******************")

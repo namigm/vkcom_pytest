@@ -243,7 +243,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
 }
 </script>
     <h1>report.html</h1>
-    <p>Report generated on 12-Feb-2022 at 00:59:19 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.1.1</p>
+    <p>Report generated on 16-Feb-2022 at 22:01:11 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.1.1</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
@@ -262,8 +262,8 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <td>Tester</td>
         <td>NamigM</td></tr></table>
     <h2>Summary</h2>
-    <p>1 tests ran in 29.98 seconds. </p>
-    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">1 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
+    <p>3 tests ran in 74.24 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">3 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
       <thead id="results-table-head">
@@ -277,9 +277,84 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
-          <td class="col-name">vkcom_pytest/testCases/test_FindUser.py::Test_004_find_user::test_find_user</td>
-          <td class="col-duration">29.88</td>
+          <td class="col-name">test_ChangeUserInfo.py::Test_003_change_user_info::test_change_user_info</td>
+          <td class="col-duration">34.89</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody></table></body></html>
+            <div class="log"> ------------------------------Captured stderr call------------------------------ <br/>2022-02-16 21:59:59.435 | INFO     | testCases.test_ChangeUserInfo:test_change_user_info:17 - ****************** Test_003_change_user_info ******************
+2022-02-16 21:59:59.436 | INFO     | testCases.test_ChangeUserInfo:test_change_user_info:18 - ****************** Verifying change_user_info ******************
+2022-02-16 22:00:24.813 | INFO     | vkcom_pytest.pageObjects.ChangeUserInfo:setLanguageSkill:38 - ****************** Test_003_Aze_language_is_removed from skills  ******************
+2022-02-16 22:00:26.627 | INFO     | testCases.test_ChangeUserInfo:test_change_user_info:35 - ****************** Test_003_change_user_info is passed ******************
+2022-02-16 22:00:26.628 | INFO     | testCases.test_ChangeUserInfo:test_change_user_info:41 - ****************** Test_003_change_user_info is completed ******************
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_FindUser.py::Test_004_find_user::test_find_user</td>
+          <td class="col-duration">21.26</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stderr call------------------------------ <br/>2022-02-16 22:00:34.268 | INFO     | testCases.test_FindUser:test_find_user:15 - ****************** Test_004_find_user ******************
+2022-02-16 22:00:34.269 | INFO     | testCases.test_FindUser:test_find_user:16 - ****************** Verifying find_user function ******************
+2022-02-16 22:00:51.827 | INFO     | testCases.test_FindUser:test_find_user:31 - ****************** Test_004_found 52 users ******************
+2022-02-16 22:00:51.884 | INFO     | testCases.test_FindUser:test_find_user:47 - ****************** Test_004_find_user is passed ******************
+2022-02-16 22:00:51.884 | INFO     | testCases.test_FindUser:test_find_user:48 - ****************** Test_004_find_user is completed ******************
+--- Logging error in Loguru Handler #1 ---
+Record was: {&#x27;elapsed&#x27;: datetime.timedelta(seconds=54, microseconds=307280), &#x27;exception&#x27;: None, &#x27;extra&#x27;: {}, &#x27;file&#x27;: (name=&#x27;test_FindUser.py&#x27;, path=&#x27;C:\\Selenium\\vkcom\\vkcom_pytest\\testCases\\test_FindUser.py&#x27;), &#x27;function&#x27;: &#x27;test_find_user&#x27;, &#x27;level&#x27;: (name=&#x27;INFO&#x27;, no=20, icon=&#x27;ℹ️&#x27;), &#x27;line&#x27;: 48, &#x27;message&#x27;: &#x27;****************** Test_004_find_user is completed ******************&#x27;, &#x27;module&#x27;: &#x27;test_FindUser&#x27;, &#x27;name&#x27;: &#x27;testCases.test_FindUser&#x27;, &#x27;process&#x27;: (id=1216, name=&#x27;MainProcess&#x27;), &#x27;thread&#x27;: (id=13152, name=&#x27;MainThread&#x27;), &#x27;time&#x27;: datetime(2022, 2, 16, 22, 0, 51, 884892, tzinfo=datetime.timezone(datetime.timedelta(seconds=14400), &#x27;Azerbaijan Standard Time&#x27;))}
+Traceback (most recent call last):
+  File &quot;C:\Selenium\vkcom\venv\lib\site-packages\loguru\_handler.py&quot;, line 177, in emit
+    self._sink.write(str_record)
+  File &quot;C:\Selenium\vkcom\venv\lib\site-packages\loguru\_file_sink.py&quot;, line 173, in write
+    self._terminate_file(is_rotating=True)
+  File &quot;C:\Selenium\vkcom\venv\lib\site-packages\loguru\_file_sink.py&quot;, line 204, in _terminate_file
+    os.rename(old_path, renamed_path)
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: &#x27;C:\\Selenium\\vkcom\\vkcom_pytest\\logs\\logs.log&#x27; -&gt; &#x27;C:\\Selenium\\vkcom\\vkcom_pytest\\logs\\logs.2022-02-16_21-58-15_152358.log&#x27;
+--- End of logging error ---
+--- Logging error in Loguru Handler #2 ---
+Record was: {&#x27;elapsed&#x27;: datetime.timedelta(seconds=54, microseconds=307280), &#x27;exception&#x27;: None, &#x27;extra&#x27;: {}, &#x27;file&#x27;: (name=&#x27;test_FindUser.py&#x27;, path=&#x27;C:\\Selenium\\vkcom\\vkcom_pytest\\testCases\\test_FindUser.py&#x27;), &#x27;function&#x27;: &#x27;test_find_user&#x27;, &#x27;level&#x27;: (name=&#x27;INFO&#x27;, no=20, icon=&#x27;ℹ️&#x27;), &#x27;line&#x27;: 48, &#x27;message&#x27;: &#x27;****************** Test_004_find_user is completed ******************&#x27;, &#x27;module&#x27;: &#x27;test_FindUser&#x27;, &#x27;name&#x27;: &#x27;testCases.test_FindUser&#x27;, &#x27;process&#x27;: (id=1216, name=&#x27;MainProcess&#x27;), &#x27;thread&#x27;: (id=13152, name=&#x27;MainThread&#x27;), &#x27;time&#x27;: datetime(2022, 2, 16, 22, 0, 51, 884892, tzinfo=datetime.timezone(datetime.timedelta(seconds=14400), &#x27;Azerbaijan Standard Time&#x27;))}
+Traceback (most recent call last):
+  File &quot;C:\Selenium\vkcom\venv\lib\site-packages\loguru\_handler.py&quot;, line 177, in emit
+    self._sink.write(str_record)
+  File &quot;C:\Selenium\vkcom\venv\lib\site-packages\loguru\_file_sink.py&quot;, line 173, in write
+    self._terminate_file(is_rotating=True)
+  File &quot;C:\Selenium\vkcom\venv\lib\site-packages\loguru\_file_sink.py&quot;, line 204, in _terminate_file
+    os.rename(old_path, renamed_path)
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: &#x27;C:\\Selenium\\vkcom\\vkcom_pytest\\logs\\logs.log&#x27; -&gt; &#x27;C:\\Selenium\\vkcom\\vkcom_pytest\\logs\\logs.2022-02-16_21-58-15_152358.log&#x27;
+--- End of logging error ---
+--- Logging error in Loguru Handler #3 ---
+Record was: {&#x27;elapsed&#x27;: datetime.timedelta(seconds=54, microseconds=307280), &#x27;exception&#x27;: None, &#x27;extra&#x27;: {}, &#x27;file&#x27;: (name=&#x27;test_FindUser.py&#x27;, path=&#x27;C:\\Selenium\\vkcom\\vkcom_pytest\\testCases\\test_FindUser.py&#x27;), &#x27;function&#x27;: &#x27;test_find_user&#x27;, &#x27;level&#x27;: (name=&#x27;INFO&#x27;, no=20, icon=&#x27;ℹ️&#x27;), &#x27;line&#x27;: 48, &#x27;message&#x27;: &#x27;****************** Test_004_find_user is completed ******************&#x27;, &#x27;module&#x27;: &#x27;test_FindUser&#x27;, &#x27;name&#x27;: &#x27;testCases.test_FindUser&#x27;, &#x27;process&#x27;: (id=1216, name=&#x27;MainProcess&#x27;), &#x27;thread&#x27;: (id=13152, name=&#x27;MainThread&#x27;), &#x27;time&#x27;: datetime(2022, 2, 16, 22, 0, 51, 884892, tzinfo=datetime.timezone(datetime.timedelta(seconds=14400), &#x27;Azerbaijan Standard Time&#x27;))}
+Traceback (most recent call last):
+  File &quot;C:\Selenium\vkcom\venv\lib\site-packages\loguru\_handler.py&quot;, line 177, in emit
+    self._sink.write(str_record)
+  File &quot;C:\Selenium\vkcom\venv\lib\site-packages\loguru\_file_sink.py&quot;, line 173, in write
+    self._terminate_file(is_rotating=True)
+  File &quot;C:\Selenium\vkcom\venv\lib\site-packages\loguru\_file_sink.py&quot;, line 204, in _terminate_file
+    os.rename(old_path, renamed_path)
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: &#x27;C:\\Selenium\\vkcom\\vkcom_pytest\\logs\\logs.log&#x27; -&gt; &#x27;C:\\Selenium\\vkcom\\vkcom_pytest\\logs\\logs.2022-02-16_21-58-15_152358.log&#x27;
+--- End of logging error ---
+--- Logging error in Loguru Handler #4 ---
+Record was: {&#x27;elapsed&#x27;: datetime.timedelta(seconds=54, microseconds=307280), &#x27;exception&#x27;: None, &#x27;extra&#x27;: {}, &#x27;file&#x27;: (name=&#x27;test_FindUser.py&#x27;, path=&#x27;C:\\Selenium\\vkcom\\vkcom_pytest\\testCases\\test_FindUser.py&#x27;), &#x27;function&#x27;: &#x27;test_find_user&#x27;, &#x27;level&#x27;: (name=&#x27;INFO&#x27;, no=20, icon=&#x27;ℹ️&#x27;), &#x27;line&#x27;: 48, &#x27;message&#x27;: &#x27;****************** Test_004_find_user is completed ******************&#x27;, &#x27;module&#x27;: &#x27;test_FindUser&#x27;, &#x27;name&#x27;: &#x27;testCases.test_FindUser&#x27;, &#x27;process&#x27;: (id=1216, name=&#x27;MainProcess&#x27;), &#x27;thread&#x27;: (id=13152, name=&#x27;MainThread&#x27;), &#x27;time&#x27;: datetime(2022, 2, 16, 22, 0, 51, 884892, tzinfo=datetime.timezone(datetime.timedelta(seconds=14400), &#x27;Azerbaijan Standard Time&#x27;))}
+Traceback (most recent call last):
+  File &quot;C:\Selenium\vkcom\venv\lib\site-packages\loguru\_handler.py&quot;, line 177, in emit
+    self._sink.write(str_record)
+  File &quot;C:\Selenium\vkcom\venv\lib\site-packages\loguru\_file_sink.py&quot;, line 173, in write
+    self._terminate_file(is_rotating=True)
+  File &quot;C:\Selenium\vkcom\venv\lib\site-packages\loguru\_file_sink.py&quot;, line 204, in _terminate_file
+    os.rename(old_path, renamed_path)
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: &#x27;C:\\Selenium\\vkcom\\vkcom_pytest\\logs\\logs.log&#x27; -&gt; &#x27;C:\\Selenium\\vkcom\\vkcom_pytest\\logs\\logs.2022-02-16_21-58-15_152358.log&#x27;
+--- End of logging error ---
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_Login.py::Test_001_test_login::test_login</td>
+          <td class="col-duration">17.51</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stderr call------------------------------ <br/>2022-02-16 22:00:55.436 | INFO     | testCases.test_Login:test_login:34 - ****************** Test_001_test_login ******************
+2022-02-16 22:00:55.441 | INFO     | testCases.test_Login:test_login:35 - ****************** Verifying test_login ******************
+2022-02-16 22:01:07.591 | INFO     | testCases.test_Login:test_login:46 - ****************** test_login is passed ******************
+<br/></div></td></tr></tbody></table></body></html>
