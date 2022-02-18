@@ -15,6 +15,7 @@ class changeUserInfo:
         self.driver.find_element(By.ID, Locators.mainPage_id).click()
 
     def profileEdit(self):
+        time.sleep(2)
         self.driver.find_element(By.ID, Locators.profileEdit_id).click()
 
     def setFamilyStatus(self, f_status):
@@ -35,6 +36,7 @@ class changeUserInfo:
             self.logger.info("****************** Test_003_Rus_language_is_removed from skills ******************")
         if len(self.driver.find_elements(By.ID, Locators.azLanguage_id)) > 0:
             self.driver.find_element(By.XPATH, Locators.delAzLang_id).click()
+            time.sleep(2)
             self.logger.info("****************** Test_003_Aze_language_is_removed from skills  ******************")
         self.driver.find_element(By.CSS_SELECTOR, Locators.langField_css).click()
         ActionChains(self.driver).move_to_element(self.driver.find_element(By.XPATH, add_language)).click().perform()

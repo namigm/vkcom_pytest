@@ -4,18 +4,18 @@ from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 from webdriver_manager.firefox import GeckoDriverManager
 
-s = Service(ChromeDriverManager().install())
+s1 = Service(ChromeDriverManager().install())
 s2 = Service(GeckoDriverManager().install())
 
 
 @pytest.fixture()
 def setup(browser):
     if browser == 'chrome':
-        driver = webdriver.Chrome(service=s)
+        driver = webdriver.Chrome()
     elif browser == 'firefox':
-        driver = webdriver.Firefox(service=s2)
+        driver = webdriver.Firefox(GeckoDriverManager().install())
     else:
-        driver = webdriver.Chrome(service=s)
+        driver = webdriver.Chrome(ChromeDriverManager().install())
     return driver
 
 
@@ -37,3 +37,4 @@ def pytest_configure(config):
 def pytest_metadata(metadata):
     metadata.pop("JAVA_HOME", None)
     metadata.pop("Plugins", None)
+

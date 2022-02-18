@@ -9,21 +9,22 @@ class Test_001_test_login:
 
     @pytest.mark.regression
     def test_homepage_title(self, setup):
-        self.logger.info("****************** Test_001_test_login ******************")
+        self.logger.info("****************** Test_001_test_login/homepage_title ******************")
         self.logger.info("****************** Verifying test_homepage_title ******************")
         self.driver = setup
         self.driver.get(ReadConfig.getURL())
 
         actual_title = self.driver.title
-        print(actual_title)
         if actual_title == "Welcome! | VK":
-            self.logger.info("****************** test_homepage_title is passed ******************")
+            self.logger.info("****************** Test_001_test_login/test_homepage_title is passed ******************")
+            self.logger.info("****************** Test_001_test_login/homepage_title is completed ******************")
             self.driver.close()
             assert True
 
         else:
             self.driver.get_screenshot_as_file(r"vkcom_pytest/screenshots/test_homepage_title.png")
             self.logger.error("****************** test_homepage_title is failed ******************")
+            self.logger.info("****************** Test_001_test_login/homepage_title is completed ******************")
             self.driver.close()
             assert False
 
@@ -31,8 +32,8 @@ class Test_001_test_login:
     @pytest.mark.regression
     @pytest.mark.uat
     def test_login(self, setup):
-        self.logger.info("****************** Test_001_test_login ******************")
-        self.logger.info("****************** Verifying test_login ******************")
+        self.logger.info("****************** Test_001_test_login/test_login ******************")
+        self.logger.info("****************** Verifying test_login/test_login ******************")
         self.driver = setup
         self.driver.get(ReadConfig.getURL())
         self.lp = loginPage(self.driver)
@@ -43,11 +44,12 @@ class Test_001_test_login:
         self.lp.topLogout()
         actual_title = self.driver.title
         if actual_title == "Новости":
-            self.logger.info("****************** test_login is passed ******************")
+            self.logger.info("****************** Test_001_test_login/test_login is passed ******************")
+            self.logger.info("****************** Test_001_test_login/test_login is completed ******************")
             self.driver.close()
             assert True
         else:
-            self.logger.error("****************** test_login is failed ******************")
+            self.logger.error("****************** Test_001_test_login/test_login is failed ******************")
+            self.logger.info("****************** Test_001_test_login/test_login is completed ******************")
             self.driver.close()
             assert False
-

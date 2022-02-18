@@ -3,6 +3,7 @@ from vkcom_pytest.locators.Locators_main import Locators
 from selenium.webdriver.common.by import By
 
 
+
 class loginPage:
     def __init__(self, driver):
         self.driver = driver
@@ -21,8 +22,8 @@ class loginPage:
 
     def topLogout(self):
         self.driver.find_element(By.CSS_SELECTOR, Locators.topProfileMenu_css).click()
-        time.sleep(2)
-        self.driver.find_element(By.XPATH, Locators.topLogoutButton_xpath).click()
+        self.driver.implicitly_wait(5)
+        self.driver.find_element(By.ID, Locators.topLogoutButton_id).click()
 
     def topHomeLinkSmall(self):
         self.driver.find_element(By.CSS_SELECTOR, Locators.topHomeLink_small_css).click()

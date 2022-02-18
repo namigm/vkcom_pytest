@@ -10,17 +10,18 @@ class findUser:
         self.driver = driver
 
     def clickLeftMenuFriends(self):
-        # self.driver.implicitly_wait(10)
         self.driver.find_element(By.ID, Locators.leftMenuFriends_id).click()
 
     def clickFindFriendBtn(self):
+        self.driver.implicitly_wait(5)
         self.driver.find_element(By.ID, Locators.bFindFriends_id).click()
 
     def setSearchData(self, input_data):
-        self.driver.find_element(By.ID, Locators.topSearch_id).click()
-        self.driver.find_element(By.ID, Locators.topSearch_id).send_keys(input_data)
-        self.driver.find_element(By.ID, Locators.topSearch_id).send_keys(Keys.ENTER)
         time.sleep(3)
+        self.driver.find_element(By.ID, Locators.topSearch_id).send_keys(input_data)
+        time.sleep(1)
+        self.driver.find_element(By.ID, Locators.topSearch_id).send_keys(Keys.ENTER)
+        time.sleep(2)
 
     def clickFilterExpand(self):
         self.driver.find_element(By.XPATH, Locators.searchFilterExpand_xpath).click()
