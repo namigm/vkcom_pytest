@@ -1,8 +1,8 @@
-import time
-from vkcom_pytest.locators.Locators_main import Locators
+from locators.Locators_main import Locators
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.action_chains import ActionChains
-from vkcom_pytest.utilities.customLogger import LogGen
+from utilities.customLogger import LogGen
+import time
 
 
 class changeUserInfo:

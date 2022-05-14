@@ -1,9 +1,11 @@
 class Locators:
     ##########################LoginPage.py############################
 
-    indexEmail_id = 'index_email'
-    indexPassword_id = 'index_pass'
-    signinButton_id = 'index_login_button'
+    accessLogin_xpath = '//*[@id="index_login"]/div/form/button[1]/span/span'
+    usernameSub_xpath = '/html/body/div/div/div/div[2]/div/form/div[2]/div[1]/button'
+    loginSub_xpath = "//button/div/span"
+    subEmail_name = 'login'
+    subPassword_name = 'password'
     topProfileMenu_css = '.TopNavBtn__profileArrow > svg'
     topLogoutButton_id = 'top_logout_link'
     topHomeLink_small_css = '.TopHomeLink path:nth-child(2)'

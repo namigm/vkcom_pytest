@@ -1,0 +1,7 @@
+{
+    "python.analysis.extraPaths": [
+        "./vkcom_pytest/pageObjects",
+        "./vkcom_pytest/locators",
+        "./vkcom_pytest/testData"
+    ]
+}
